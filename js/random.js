@@ -12,12 +12,12 @@ if (lownumber && highnumber) //test that both are numbers
     // Use Math.random() and the user's number to generate a random number
     const multiplyer = highnumber - lownumber + 1;
     const randNum = Math.floor(Math.random()* multiplyer)+ lownumber;
-    console.log(`${randNum} is a random number between ${lownumber} and ${highnumber}!`);
+    document.getElementById("output").innerHTML = `${randNum} is a random number between ${lownumber} and ${highnumber}!`;
   } else {
-  console.log(`The first number must be lower than the second number, try again`);
+    document.getElementById("output").innerHTML = `The first number must be lower than the second number, try again`;
   }
 else {
-  console.log(`You must provide two numbers`);
+  document.getElementById("output").innerHTML = `You must provide two numbers`;
 }
   
 
